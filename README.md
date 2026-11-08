@@ -91,28 +91,6 @@ docker run -d -p 3000:3000 --name diwali-app happy-diwali-3d
 
 ---
 
-## ☁️ Cloud Deployment
-
-### Deploy to Vercel
-The repository includes a production-ready `vercel.json` configuration:
-
-1. Install the Vercel CLI:
-   ```bash
-   npm i -g vercel
-   ```
-2. Deploy directly from the project directory:
-   ```bash
-   vercel
-   ```
-
-### Deploy to Railway / Render / Fly.io
-Deploy this repository with a single click:
-- **Build Command**: `npm install`
-- **Start Command**: `npm start`
-- **Port**: `3000`
-
----
-
 ## 🛠️ Tech Stack
 
 - **Rendering Engine**: [Three.js](https://threejs.org/) (WebGL 2.0, Custom GLSL Shaders, Bloom Pass, Tone Mapping)
