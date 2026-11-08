@@ -71,3 +71,5 @@ app.listen(PORT, () => {
   console.log(`✨ Diwali celebration running at http://localhost:${PORT}`);
   console.log(`👉 Main URL: http://localhost:${PORT}/`);
 });
+
+module.exports = app;

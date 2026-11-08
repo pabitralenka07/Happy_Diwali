@@ -3,34 +3,16 @@
   "builds": [
     {
       "src": "server.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["public/**"]
+      }
     }
   ],
   "routes": [
-    {
-      "src": "/_next/(.*)",
-      "dest": "/public/_next/$1"
-    },
-    {
-      "src": "/models/(.*)",
-      "dest": "/public/models/$1"
-    },
-    {
-      "src": "/audio/(.*)",
-      "dest": "/public/audio/$1"
-    },
-    {
-      "src": "/brand/(.*)",
-      "dest": "/public/brand/$1"
-    },
-    {
-      "src": "/og.jpg",
-      "dest": "/public/og.jpg"
-    },
     {
       "src": "/(.*)",
       "dest": "server.js"
     }
   ]
 }
-
